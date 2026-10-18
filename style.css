@@ -7,8 +7,10 @@
     --bg-color: #0d0e12;
     --text-color: #c0c0c0;
     --accent-color: #ff55a3;
+    --accent-hover: #ff99c8;
     --card-bg: #050508;
     --card-border: #ff55a3;
+    --muted-text: #888888;
 }
 
 body {
@@ -39,13 +41,14 @@ body {
 .nav a, a {
     color: var(--accent-color);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .nav a:hover, a:hover {
-    color: #ff99c8;
+    color: var(--accent-hover);
 }
 
-.main-title {
+.main-title, .page-title {
     font-size: 2.5em;
     color: #ffffff;
     margin-bottom: 20px;
@@ -83,7 +86,7 @@ body {
 
 .outro {
     font-size: 0.9em;
-    color: #888888;
+    color: var(--muted-text);
     margin-top: 20px;
 }
 
@@ -92,4 +95,48 @@ body {
     justify-content: center;
     gap: 12px;
     margin-top: 24px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.post-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 16px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.post-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.post-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.post-title:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.post-date {
+    font-size: 0.85em;
+    color: var(--muted-text);
+}
+
+.post-item p {
+    margin: 0;
+    font-size: 0.95em;
+    color: var(--text-color);
 }
