@@ -14,3 +14,10 @@ body {
     color: var(--text-color);
     font-family: 'minecraft', monospace;
 }
+
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
