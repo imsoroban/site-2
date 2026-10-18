@@ -15,6 +15,9 @@ body {
     font-family: 'minecraft', monospace;
 }
 
+h1, h2, h3 {
+    color: var(--accent-color);
+    font-weight: normal;
 }
 
 a {
