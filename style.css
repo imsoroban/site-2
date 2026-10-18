@@ -24,3 +24,26 @@ a {
     color: var(--accent-color);
     text-decoration: none;
 }
+
+#wrap {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+#main {
+    text-align: left;
+}
+
+#main h1 {
+    margin-bottom: 8px;
+}
